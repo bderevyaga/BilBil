@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <!-- bower:css -->
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/>
 <!-- endbower -->
-<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"/>
 <link rel="stylesheet" href="/css/style.css">
 <body>
 <header>
@@ -74,17 +74,12 @@
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <label>Amount</label>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control">
-                                </div>
+                        <div class="form-group">
+                            <label>Amount</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-addon">-</div>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -99,24 +94,20 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label>Date</label>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" data-provide="datepicker">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input class="form-control" data-provide="datepicker">
-                                </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <div class="input-group">
+                                <input data-provide="datepicker" class="form-control">
+                                <div class="input-group-addon">-</div>
+                                <input data-provide="datepicker" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <label></label>
-                        <button type="submit" class="btn btn-default">Apply</button>
-                        <button type="submit" class="btn btn-default">Reset</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default">Apply</button>
+                            <button type="submit" class="btn btn-default">Reset</button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -207,8 +198,8 @@
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- endbower -->
-<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

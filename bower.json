@@ -14,10 +14,11 @@
   ],
   "dependencies": {
     "jquery": "^2.2.1",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "bootstrap-datepicker": "^1.6.0"
   },
-  "overrides":{
-    "bootstrap" : {
+  "overrides": {
+    "bootstrap": {
       "main": [
         "dist/css/bootstrap.css",
         "dist/css/bootstrap-theme.css",
