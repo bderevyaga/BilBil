@@ -1,0 +1,214 @@
+<!-- http://frontend.pelipay.com/uk/account -->
+<!DOCTYPE html>
+<html>
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+<!-- endbower -->
+<link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css"/>
+<link rel="stylesheet" href="/css/style.css">
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="http://frontend.pelipay.com/images/logo.png" width="163" height="70" alt="BilBil"
+                         title="BilBil">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav menu">
+                    <li class="active"><a href="#">Головна</a></li>
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">+380634591717 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Мій аккаунт</a></li>
+                            <li><a href="#">Профіль</a></li>
+                            <li><a href="#">Реферали</a></li>
+                            <li><a href="#">Вихід</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><span class="caret"></span> UK</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">RU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="inner content">
+            <h1>Особистий Кабінет</h1>
+            <form class="form">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Amount</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Date</label>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" data-provide="datepicker">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" data-provide="datepicker">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label></label>
+                        <button type="submit" class="btn btn-default">Apply</button>
+                        <button type="submit" class="btn btn-default">Reset</button>
+                    </div>
+                </div>
+            </form>
+            <nav class="text-center">
+                <ul class="pagination pagination-sm">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Real amount</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>318826</td>
+                    <td>Payment#6 95.00 USD</td>
+                    <td>2016-02-04 09:21:38</td>
+                    <td>95.00</td>
+                    <td>0.00$</td>
+                </tr>
+                <tr>
+                    <td>318817</td>
+                    <td>Payment 455 USD for account recharge</td>
+                    <td>2016-02-04 09:01:44</td>
+                    <td>455.00</td>
+                    <td>0.00$</td>
+                </tr>
+                <tr class="not_highlight">
+                    <td colspan="4">Total</td>
+                    <td>1190$</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <a class="btn btn-default btn-xs btn-block" href="http://frontend.pelipay.com/uk/more">Про нас</a>
+                <a class="btn btn-default btn-xs btn-block" href="http://frontend.pelipay.com/uk/contacts">Контакти</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-default btn-xs btn-block" href="http://frontend.pelipay.com/uk/terms">Угода
+                    користувача</a>
+                <a class="btn btn-default btn-xs btn-block" href="http://frontend.pelipay.com/uk/advertisers">Рекламодавцям</a>
+            </div>
+            <div class="col-md-9">
+                <section id="trademarks">
+                    <figure class="webmoney"></figure>
+                    <figure class="paypal"></figure>
+                    <figure class="visa-mastercard"></figure>
+                    <figure class="yandex"></figure>
+                    <figure class="payza"></figure>
+                </section>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
