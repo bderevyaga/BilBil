@@ -8,6 +8,27 @@
 <!-- endbower -->
 <link rel="stylesheet" href="/css/style.css">
 <body>
+<div class="modal fade login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <form>
+                    <h3>Вхід</h3>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">номер телефону не менше 10 цифр</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">пароль не менше 6 символів</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-block">Увійти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <header>
     <div class="container">
         <nav class="navbar navbar-default">
@@ -32,14 +53,17 @@
                     <li><a href="#">Контакти</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default btn-xs btn" data-toggle="modal" data-target="#myModal">
+                        Launch demo modal
+                    </button>
                     <li class="dropdown  personal-panel">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><span class="glyphicon glyphicon-user"></span> +380634591717 <span class="caret"></span></a>
+                           aria-expanded="false"><span class="icon-user user"></span> +380634591717 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#"><span class="glyphicon glyphicon-usd"></span> Мій аккаунт</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Профіль</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-btc"></span> Реферали</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-off"></span> Вихід</a></li>
+                            <li><a href="#"><span class="icon-user account"></span> Мій аккаунт</a></li>
+                            <li><a href="#"><span class="icon-user profile"></span> Профіль</a></li>
+                            <li><a href="#"><span class="icon-user referrals"></span> Реферали</a></li>
+                            <li><a href="#"><span class="icon-user exit"></span> Вихід</a></li>
                         </ul>
                     </li>
                     <li class="dropdown lang-select">

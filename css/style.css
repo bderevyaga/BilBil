@@ -113,6 +113,7 @@ body {
   .navbar-nav.menu > li > a:hover {
     background: none;
     box-shadow: none;
+    text-decoration: underline;
   }
   .navbar-nav.menu > li:last-child > a {
     border-right: none;
@@ -209,8 +210,8 @@ footer .btn-default:hover {
 }
 .navbar-default .navbar-nav .personal-panel .dropdown-toggle {
   color: #fff;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-transform: capitalize;
   background: #f8a131 linear-gradient(to bottom, #F8c731 0, #F89B31 100%);
   box-shadow: 1px 1px 0 #ce822b;
@@ -242,8 +243,8 @@ footer .btn-default:hover {
 .navbar-default .navbar-nav > li.personal-panel.open > a,
 .navbar-default .navbar-nav > li.personal-panel.open > a:focus,
 .navbar-default .navbar-nav > li.personal-panel.open > a:hover {
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
   box-shadow: 1px 1px 0 #ce822b;
   background: #F8c731 linear-gradient(to bottom, #F89B31 0, #F8c731 100%);
 }
@@ -308,6 +309,31 @@ footer .btn-default:hover {
   width: 102px;
   height: 51px;
 }
+.icon-user {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  background-image: url('/img/icons-plus.png');
+}
+.icon-user.user {
+  background-position: -15px -9px;
+}
+.icon-user.account {
+  background-position: -15px -39px;
+}
+.icon-user.profile {
+  background-position: -15px -70px;
+}
+.icon-user.areas {
+  background-position: -15px -275px;
+}
+.icon-user.referrals {
+  background-position: -15px -100px;
+}
+.icon-user.exit {
+  background-position: -15px -130px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
     display: block;
@@ -353,4 +379,28 @@ footer .btn-default:hover {
   .navbar-default .navbar-nav > li.lang-select {
     margin-top: 15px;
   }
+}
+.modal.login h3 {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-family: 'OpenSansBold';
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.modal.login label {
+  font-size: 10px;
+  text-transform: none;
+}
+.modal.login .modal-dialog {
+  width: 100%;
+  margin: 0;
+}
+.modal.login .modal-content {
+  border-radius: 0;
+  border: none;
+}
+.modal.login form {
+  max-width: 300px;
+  margin: 0 auto;
 }
